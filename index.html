@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Khadim Diop</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></head>
+<!-- Modal Image -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+    <img id="modalImg">
+</div>
+<body>
+    
+ <div class="page-wrapper">
+   <!-- Navbar simple -->
+<!-- Navbar simple -->
+<nav class="navbar">
+
+    <div class="nav-top">
+        <div class="logo">KD</div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#phototheque">Photothèque</a></li>
+        <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+</nav>
+<section id="home">
+<header>
+    
+         <div class="hero-content">
+        <img src="khadim.jpg" alt="Photo de Khadim" class="profile-pic">
+        <h1>Khadim Diop</h1>
+        <b><p>Développeur Web </p></b>
+        <b><p>Etudiant en Master Science des données et application option ingénierie des données 
+            et intélligence artificielle</p> </b>
+        <a href="#contact" class="btn">Me contacter</a>
+    </div>
+   
+</header>
+</section>
+
+<section id="about">
+    <h2>👤 Profil</h2>
+    <p>Développeur passionné spécialisé en Laravel et Angular. 
+       Je crée des applications modernes et performantes. J'ai aussi des base solides en réseau et télécom.</p>
+</section>
+<section id="stats">
+    <div class="stats-container">
+        <div class="stat">
+            <h3 class="counter" data-target="3">0</h3>
+            <p>Projets réalisés</p>
+        </div>
+
+        <div class="stat">
+            <h3 class="counter" data-target="8">0</h3>
+            <p>Technologies maîtrisées</p>
+        </div>
+
+        <div class="stat">
+            <h3 class="counter" data-target="17">0</h3>
+            <p>Années d'expérience académique</p>
+        </div>
+
+        <div class="stat">
+            <h3 class="counter" data-target="100">0</h3>
+            <p>Motivation %</p>
+        </div>
+    </div>
+</section>
+<section id="phototheque">
+    <h2>📷 Photothèque</h2>
+
+    <div class="gallery">
+
+        <div class="photo-card">
+            <img src="conf.jpeg" alt="" onclick="openModal(this.src)">
+            <div class="photo-info">
+                <h4>Discours en ma qualité de président de l'amicale des étudiants de Daroul Mouhty à Thiès </h4>
+                <p> Jounée culturelle de l'amicale</p>
+            </div>
+        </div>
+
+        <div class="photo-card">
+            <img src="digi.jpeg" alt="" onclick="openModal(this.src)">
+            <div class="photo-info">
+                <h4>Avec Serigne Mbacké LO , le Directeur général du CROUS-T</h4>
+                <p>Lors du Digital Day du CROUS-T </p>
+            </div>
+        </div>
+
+        <div class="photo-card">
+            <img src="IMG.jpeg" alt="" onclick="openModal(this.src)">
+            <div class="photo-info">
+                <h4>Conférence Technologique : Prise de parole</h4>
+                <p>Lors du weekend d'intégration du club informatique de l'UIDT</p>
+            </div>
+        </div>
+         <div class="photo-card"> 
+            <img src="inte.jpeg" alt="" onclick="openModal(this.src)">
+            <div class="photo-info">
+                <h4> Journée d'intégration de L'AMEEDAD</h4>
+                <p> A l'université Cheikh Anta DIOP de Dakar</p>
+            </div>
+        </div>
+          <div class="photo-card">
+            <img src="invest.jpeg" alt="" onclick="openModal(this.src)">
+            <div class="photo-info">
+                <h4>Investissement humain</h4>
+                <p>A l'université Iba Der THIAM de Thiès</p>
+            </div>
+        </div>
+        
+        
+
+
+    </div>
+</section>
+<section id="parcours">
+    <h2>🎓 Parcours</h2>
+    <ul>
+        <b><li>Master 1 en ingénierie de données et intélligence artificielle (en cours)</li></b>
+        <b><li>Licence en Informatique option génie logiciel</li></b>
+       <b> <li>Baccalauréat en série S1</li> </b>
+    </ul>
+</section>
+
+<section id="skills">
+    <h2>💻 Compétences</h2>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <i class="fab fa-html5"></i>
+            <h3>HTML</h3>
+            <p>90%</p>
+        </div> 
+
+        <div class="skill-card">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS</h3>
+            <p>85%</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fab fa-js"></i>
+            <h3>JavaScript</h3>
+            <p>80%</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fab fa-laravel"></i>
+            <h3>Laravel</h3>
+            <p>75%</p>
+        </div>
+
+        <div class="skill-card">  
+            <i class="fab fa-angular"></i>
+            <h3>Angular</h3>
+            <p>70%</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-database"></i>
+            <h3>MySQL</h3>
+            <p>80%</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-database"></i>
+            <h3>SQLite</h3>
+            <p>75%</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-project-diagram"></i>
+            <h3>UML</h3>
+            <p>85%</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-sitemap"></i>
+            <h3>Merise</h3>
+            <p>70%</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="projects">
+    <h2>📂 Projets</h2>
+
+    <div class="project-card">
+        <img src="gestion.jpg" alt="Projet 1">
+        <h3>Application de Gestion de Stock</h3>
+        <p>Application développée avec Laravel en backend, Angular en frontend et Bootstrap.</p>
+    </div>
+
+    <div class="project-card">
+        <img src="manager.webp" alt="Projet 2">
+        <h3>Event Manager</h3>
+        <p>Application Angular en front et Laravel en Back la pour la gestion des événements.</p>
+    </div>
+
+    
+
+</section>
+
+<section id="documents">
+    <h2>📄 Documents</h2>
+    <a href="Cv_Khadim_DIOP.pdf" target="_blank" class="btn">Voir mon CV</a>
+    <a href="Projet_Oprerationnel.pdf" target="_blank" class="btn">Voir mon projet de fin cycle de Licence en génie logiciel </a>
+</section>
+
+<section id="interets">
+    <h2>🎯 Centres d’intérêt</h2>
+    <p>Programmation, Innovation technologique, intélligence artificielle, Design UI/UX, Entrepreneuriat</p>
+</section>
+
+<section id="contact">
+    <h2>📞 Contact</h2>
+    <div class="contact-info">
+    <p><i class="fas fa-envelope"></i> khadim.diop7@univ-thies.sn</p>
+    <p><i class="fas fa-at"></i> diopk1800@gmail.com</p>
+    <p><i class="fas fa-phone"></i> +221 78 295 56 84</p>
+   </div>
+
+    <div class="socials">
+       <center> <a href="https://www.linkedin.com/in/khadim-diop-4a876a304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="https://wa.me/221782955684" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a> 
+         <a href="https://x.com/KhadimJOOP?t=xfvIYbVMjzGKz-W3Qh12hA&s=09" target="_blank">
+        <i class="fab fa-x-twitter"></i>
+         </a>
+        <a href="https://www.facebook.com/share/14SMwR28G7Z/" target="_blank">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/khadimul_khadiim?igsh=MWozbTV6NmYwaXI3eQ==" target="_blank">
+             <i class="fab fa-instagram"></i>
+      </a>
+    </div> </center>
+</section>
+
+<footer>
+    <p>© 2026 Khadim Diop - Tous droits réservés</p>
+</footer>
+
+<script src="style.js"></script>
+</div>
+
+</body>
+</html>
